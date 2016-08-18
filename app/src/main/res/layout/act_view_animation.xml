@@ -10,13 +10,13 @@
     <Button
         android:id="@+id/main_btn0"
         style="@style/CommonButton"
-        android:text="View Animation" />
+        android:text="Tween animation" />
 
     <Button
         android:id="@+id/main_btn1"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Property Animation" />
+        android:text="Frame animation" />
 
 
 
