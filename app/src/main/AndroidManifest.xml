@@ -16,8 +16,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".PropertyAnimationAct"/>
+        <activity android:name=".VectorAnimationAct"/>
         <activity android:name=".ViewAnimationAct"/>
         <activity android:name=".View.TweenAnimationAct"/>
+        <activity android:name=".View.tween.AlphaAnimationAct"/>
+        <activity android:name=".View.tween.ScaleAnimationAct"/>
+        <activity android:name=".View.tween.RotateAnimationAct"/>
+        <activity android:name=".View.tween.TranslateAnimationAct"/>
+        <activity android:name=".View.tween.AnimationSetAct"/>
+        <activity android:name=".View.tween.LayoutAnimationControllerAct"/>
+        <activity android:name=".View.tween.InterpolatorAct"/>
         <activity android:name=".View.FrameAnimationAct"/>
     </application>
 

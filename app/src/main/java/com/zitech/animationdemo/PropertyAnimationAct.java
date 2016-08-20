@@ -1,32 +1,29 @@
 package com.zitech.animationdemo;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
 /**
- * Created by Administrator on 2016/8/18 0018.
+ * Created by pepe on 2016/8/18 0018.
  */
 public class PropertyAnimationAct extends AppCompatActivity {
-    ImageView img;
+
+    ImageView image;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.act_property_animation);
-        img = (ImageView) findViewById(R.id.img);
+        image = (ImageView) findViewById(R.id.image);
     }
 
     @Override
@@ -43,10 +40,12 @@ public class PropertyAnimationAct extends AppCompatActivity {
         menu.add(Menu.NONE, 6, 0, "scaleY");    //添加选项
         menu.add(Menu.NONE, 7, 0, "pivotX");    //添加选项
         menu.add(Menu.NONE, 8, 0, "pivotY");    //添加选项
-        menu.add(Menu.NONE, 9, 0, "alpha");    //添加选项
-        menu.add(Menu.NONE, 10, 0, "PropertyValuesHolder");    //添加选项
-        menu.add(Menu.NONE, 11, 0, "ValueAnimator");    //添加选项
-        menu.add(Menu.NONE, 12, 0, "AnimatorSet");    //添加选项
+        menu.add(Menu.NONE, 9, 0, "X");    //添加选项
+        menu.add(Menu.NONE, 10, 0, "Y");    //添加选项
+        menu.add(Menu.NONE, 11, 0, "alpha");    //添加选项
+        menu.add(Menu.NONE, 12, 0, "PropertyValuesHolder");    //添加选项
+        menu.add(Menu.NONE, 13, 0, "ValueAnimator");    //添加选项
+        menu.add(Menu.NONE, 14, 0, "AnimatorSet");    //添加选项
         return true;
     }
 
@@ -56,76 +55,58 @@ public class PropertyAnimationAct extends AppCompatActivity {
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+//            ofFloat()方法的第一个参数表示动画操作的对象（可以是任意对象），
+//            第二个参数表示操作对象的属性名字（只要是对象有的属性都可以），
+//            第三个参数之后就是动画过渡值。当然过度值可以有一个到N个，
+//            如果是一个值的话默认这个值是动画过渡值的结束值。如果有N个值，动画就在这N个值之间过渡。
             case 0:
-                AlphaAnimation aa;
-                ObjectAnimator animator0 = ObjectAnimator.ofFloat(img,"translationX",300).setDuration(300);
-                animator0.addListener(new Animator.AnimatorListener() {
-                    @Override
-                    public void onAnimationStart(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationCancel(Animator animation) {
-
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animator animation) {
-
-                    }
-                });
-                animator0.start();
+                ObjectAnimator.ofFloat(image, "translationX", 0.0f, 350.0f, 0f).setDuration(2500).start();
                 break;
             case 1:
-                ObjectAnimator animator1 = ObjectAnimator.ofFloat(img,"translationY",300).setDuration(300);
-                animator1.addListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        super.onAnimationEnd(animation);
-                    }
-                });
-                animator1.start();
+                ObjectAnimator.ofFloat(image, "translationY", 100.0f, 350.0f, 0f).setDuration(2500).start();
                 break;
             case 2:
-                ObjectAnimator.ofFloat(img,"rotationX",300).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"rotationX",0.0f, 90.0f,0.0F).setDuration(2500).start();
                 break;
             case 3:
-                ObjectAnimator.ofFloat(img,"rotationY",300).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"rotationY",0.0f, 90.0f,0.0F).setDuration(2500).start();
                 break;
             case 4:
-                ObjectAnimator.ofFloat(img,"rotation",300).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"rotation",0.0f, 90.0f,0.0F).setDuration(4000).start();
                 break;
             case 5:
-                ObjectAnimator.ofFloat(img,"scaleX",2).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"scaleX",1.0f, 2.0f,1.0f).setDuration(2500).start();
                 break;
             case 6:
-                ObjectAnimator.ofFloat(img,"scaleY",2).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"scaleY",1.0f, 2.0f,1.0f).setDuration(2500).start();
                 break;
             case 7:
-                ObjectAnimator.ofFloat(img,"pivotX",3).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"pivotX",0,300,0).setDuration(4000).start();
+                ObjectAnimator.ofFloat(image,"rotation",0.0f, 90.0f,0.0F).setDuration(4000).start();
                 break;
             case 8:
-                ObjectAnimator.ofFloat(img,"pivotY",-5).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"pivotY",300).setDuration(4000).start();
+                ObjectAnimator.ofFloat(image,"rotation",0.0f, 90.0f,0.0F).setDuration(4000).start();
                 break;
             case 9:
-                ObjectAnimator.ofFloat(img,"alpha",0.3f).setDuration(300).start();
+                ObjectAnimator.ofFloat(image,"X",0,300,0).setDuration(3000).start();
                 break;
             case 10:
+                ObjectAnimator.ofFloat(image,"Y",0,300,0).setDuration(3000).start();
+                break;
+            case 11:
+                ObjectAnimator.ofFloat(image,"alpha",1.0f, 0.3f, 1.0f).setDuration(2500).start();
+                break;
+            case 12:
                 PropertyValuesHolder pvh1=PropertyValuesHolder.ofFloat("translationX",300f);
                 PropertyValuesHolder pvh2=PropertyValuesHolder.ofFloat("scaleX",1f,0.5f);
                 PropertyValuesHolder pvh3=PropertyValuesHolder.ofFloat("scaleY",1f,0.5f);
-                ObjectAnimator.ofPropertyValuesHolder(img,pvh1,pvh2,pvh3).setDuration(1000).start();
+                ObjectAnimator.ofPropertyValuesHolder(image,pvh1,pvh2,pvh3).setDuration(1000).start();
 
                 break;
-            case 11:
+            case 13:
                 ValueAnimator animator=ValueAnimator.ofFloat(0,100);
-                animator.setTarget(img);
+                animator.setTarget(image);
                 animator.setDuration(1000).start();
                 animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
@@ -136,10 +117,10 @@ public class PropertyAnimationAct extends AppCompatActivity {
                 });
 
                 break;
-            case 12:
-                ObjectAnimator animator2=ObjectAnimator.ofFloat(img,"translationX",300f);
-                ObjectAnimator animator3=ObjectAnimator.ofFloat(img,"scaleX",1f,0f,1f);
-                ObjectAnimator animator4=ObjectAnimator.ofFloat(img,"scaleY",1f,0f,1f);
+            case 14:
+                ObjectAnimator animator2=ObjectAnimator.ofFloat(image,"translationX",300f);
+                ObjectAnimator animator3=ObjectAnimator.ofFloat(image,"scaleX",1f,0f,1f);
+                ObjectAnimator animator4=ObjectAnimator.ofFloat(image,"scaleY",1f,0f,1f);
                 AnimatorSet set=new AnimatorSet();
                 set.setDuration(1000);
                 set.playTogether(animator2,animator3,animator4);
