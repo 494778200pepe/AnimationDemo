@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".PropertyAnimationAct"/>
+        <activity android:name=".Property.ObjectAnimatorAct"/>
+        <activity android:name=".Property.ValueAnimatorAct"/>
+        <activity android:name=".Property.AnimatorSetAct"/>
+        <activity android:name=".Property.PropertyValuesHolderAct"/>
+        <activity android:name=".Property.LayoutAnimaAct"/>
         <activity android:name=".VectorAnimationAct"/>
         <activity android:name=".ViewAnimationAct"/>
         <activity android:name=".View.TweenAnimationAct"/>
