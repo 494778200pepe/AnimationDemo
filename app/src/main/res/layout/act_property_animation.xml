@@ -32,6 +32,11 @@
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
         android:text="Layout Animations" />
+    <Button
+        android:id="@+id/main_btn5"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="Keyframe" />
 
 
 

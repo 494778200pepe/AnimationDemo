@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.zitech.animationdemo.Property.AnimatorSetAct;
+import com.zitech.animationdemo.Property.KeyframeAct;
 import com.zitech.animationdemo.Property.LayoutAnimaAct;
 import com.zitech.animationdemo.Property.ObjectAnimatorAct;
 import com.zitech.animationdemo.Property.PropertyValuesHolderAct;
@@ -38,6 +39,9 @@ public class PropertyAnimationAct extends AppCompatActivity implements View.OnCl
                 startActivity(new Intent(this,PropertyValuesHolderAct.class));
             case R.id.main_btn4://Layout Animations
                 startActivity(new Intent(this,LayoutAnimaAct.class));
+                break;
+            case R.id.main_btn5://Layout Animations
+                startActivity(new Intent(this,KeyframeAct.class));
                 break;
 
         }
