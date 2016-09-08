@@ -1,12 +1,9 @@
 package com.zitech.animationdemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.Interpolator;
-import android.view.animation.LayoutAnimationController;
-import android.view.animation.ScaleAnimation;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -28,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.main_btn2://矢量动画
                 startActivity(new Intent(this,VectorAnimationAct.class));
+                break;
+            case R.id.main_demo1://补间动画的demo
+                startActivity(new Intent(this,Demo1Act.class));
                 break;
 
         }

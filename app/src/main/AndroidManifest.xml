@@ -32,6 +32,7 @@
         <activity android:name=".View.tween.LayoutAnimationControllerAct"/>
         <activity android:name=".View.tween.InterpolatorAct"/>
         <activity android:name=".View.FrameAnimationAct"/>
+        <activity android:name=".Demo1Act"/>
     </application>
 
 </manifest>

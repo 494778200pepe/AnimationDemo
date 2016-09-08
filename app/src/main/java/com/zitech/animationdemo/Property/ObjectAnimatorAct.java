@@ -99,7 +99,7 @@ public class ObjectAnimatorAct extends AppCompatActivity {
             case 11:
                 ObjectAnimator.ofFloat(image,"alpha",1.0f, 0.3f, 1.0f).setDuration(2500).start();
                 break;
-            case 12:
+            case 12://一个改三个
                 ObjectAnimator anim12 = ObjectAnimator//
                         .ofFloat(image, "zhy", 1.0F,  0.0F)//
                         .setDuration(500);//
@@ -116,7 +116,7 @@ public class ObjectAnimatorAct extends AppCompatActivity {
                     }
                 });
                 break;
-            case 13:
+            case 13://动画过程监听
                 ObjectAnimator anim13 = ObjectAnimator.ofFloat(image, "alpha", 0.5f);
 
                 anim13.addListener(new Animator.AnimatorListener()
@@ -153,7 +153,7 @@ public class ObjectAnimatorAct extends AppCompatActivity {
                 });
                 anim13.start();
                 break;
-            case 14:
+            case 14://简单版监听
                 ObjectAnimator anim14 = ObjectAnimator.ofFloat(image, "alpha", 0.5f);
                 anim14.addListener(new AnimatorListenerAdapter()
                 {

@@ -88,6 +88,7 @@ public class ValueAnimatorAct extends AppCompatActivity {
                 valueAnimator2.setDuration(3000);
                 valueAnimator2.setObjectValues(new PointF(0, 0));
                 valueAnimator2.setInterpolator(new LinearInterpolator());
+                //setEvaluator和在ofObject中传入TypeEvaluator是一样的
                 valueAnimator2.setEvaluator(new TypeEvaluator<PointF>()
                 {
                     // fraction = t / duration
