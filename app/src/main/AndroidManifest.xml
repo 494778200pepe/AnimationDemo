@@ -22,7 +22,12 @@
         <activity android:name=".Property.PropertyValuesHolderAct"/>
         <activity android:name=".Property.LayoutAnimaAct"/>
         <activity android:name=".Property.KeyframeAct"/>
+        <activity android:name=".Property.ViewAnimateAct"/>
+        <activity android:name=".Property.DropActivity"/>
+        <activity android:name=".Property.PropertyActivity"/>
+        <activity android:name=".Property.TimerActivity"/>
         <activity android:name=".VectorAnimationAct"/>
+        <activity android:name=".Vector.VectorDemo1Act"/>
         <activity android:name=".ViewAnimationAct"/>
         <activity android:name=".View.TweenAnimationAct"/>
         <activity android:name=".View.tween.AlphaAnimationAct"/>
@@ -32,6 +37,7 @@
         <activity android:name=".View.tween.AnimationSetAct"/>
         <activity android:name=".View.tween.LayoutAnimationControllerAct"/>
         <activity android:name=".View.tween.InterpolatorAct"/>
+        <activity android:name=".View.tween.CustomAnimationAct"/>
         <activity android:name=".View.FrameAnimationAct"/>
         <activity android:name=".Demo1Act"/>
     </application>

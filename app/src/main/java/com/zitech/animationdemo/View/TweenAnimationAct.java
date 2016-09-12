@@ -9,6 +9,7 @@ import android.view.View;
 import com.zitech.animationdemo.R;
 import com.zitech.animationdemo.View.tween.AlphaAnimationAct;
 import com.zitech.animationdemo.View.tween.AnimationSetAct;
+import com.zitech.animationdemo.View.tween.CustomAnimationAct;
 import com.zitech.animationdemo.View.tween.InterpolatorAct;
 import com.zitech.animationdemo.View.tween.LayoutAnimationControllerAct;
 import com.zitech.animationdemo.View.tween.RotateAnimationAct;
@@ -49,6 +50,9 @@ public class TweenAnimationAct extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.main_btn6://
                 startActivity(new Intent(this, InterpolatorAct.class));
+                break;
+            case R.id.main_btn7://
+                startActivity(new Intent(this, CustomAnimationAct.class));
                 break;
 
         }

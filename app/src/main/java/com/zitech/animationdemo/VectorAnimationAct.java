@@ -6,8 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.zitech.animationdemo.View.FrameAnimationAct;
-import com.zitech.animationdemo.View.TweenAnimationAct;
+import com.zitech.animationdemo.Vector.VectorDemo1Act;
 
 /**
  * Created by pepe on 2016/8/19 0019.
@@ -23,6 +22,19 @@ public class VectorAnimationAct extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View view){
         switch (view.getId()){
+            case R.id.main_btn0://
+                startActivity(new Intent(this,VectorDemo1Act.class));
+                break;
+            case R.id.main_btn1://
+                break;
+            case R.id.main_btn2://
+                break;
+            case R.id.main_btn3://
+                break;
+            case R.id.main_btn4://
+                break;
+
+
         }
     }
 }

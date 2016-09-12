@@ -44,6 +44,11 @@
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
         android:text="Interpolator" />
+    <Button
+        android:id="@+id/main_btn7"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="CustomAnimation" />
 
 
 

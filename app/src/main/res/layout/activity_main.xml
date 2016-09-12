@@ -28,7 +28,7 @@
         android:id="@+id/main_demo1"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Vector animation" />
+        android:text="demo" />
 
 
 </LinearLayout>

@@ -37,6 +37,29 @@
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
         android:text="Keyframe" />
+    <Button
+        android:id="@+id/main_btn6"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="ViewAnimate" />
+    <Button
+        android:id="@+id/main_btn7"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="Drop" />
+
+    <Button
+        android:id="@+id/main_btn8"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="Menu" />
+
+    <Button
+        android:id="@+id/main_btn9"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="Timer" />
+
 
 
 
