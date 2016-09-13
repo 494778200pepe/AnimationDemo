@@ -26,6 +26,7 @@
         <activity android:name=".Property.DropActivity"/>
         <activity android:name=".Property.PropertyActivity"/>
         <activity android:name=".Property.TimerActivity"/>
+        <activity android:name=".Property.MojiDemoAct"/>
         <activity android:name=".VectorAnimationAct"/>
         <activity android:name=".Vector.VectorDemo1Act"/>
         <activity android:name=".Vector.VectorDemo2Act"/>

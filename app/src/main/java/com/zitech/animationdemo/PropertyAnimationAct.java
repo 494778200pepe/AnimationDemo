@@ -9,6 +9,7 @@ import com.zitech.animationdemo.Property.AnimatorSetAct;
 import com.zitech.animationdemo.Property.DropActivity;
 import com.zitech.animationdemo.Property.KeyframeAct;
 import com.zitech.animationdemo.Property.LayoutAnimaAct;
+import com.zitech.animationdemo.Property.MojiDemoAct;
 import com.zitech.animationdemo.Property.ObjectAnimatorAct;
 import com.zitech.animationdemo.Property.PropertyActivity;
 import com.zitech.animationdemo.Property.PropertyValuesHolderAct;
@@ -59,6 +60,9 @@ public class PropertyAnimationAct extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.main_btn9://Timer
                 startActivity(new Intent(this, TimerActivity.class));
+                break;
+            case R.id.main_btn10://MojiDemo
+                startActivity(new Intent(this, MojiDemoAct.class));
                 break;
 
         }

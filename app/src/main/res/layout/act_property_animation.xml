@@ -59,6 +59,11 @@
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
         android:text="Timer" />
+    <Button
+        android:id="@+id/main_btn10"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:text="MojiDemo" />
 
 
 
