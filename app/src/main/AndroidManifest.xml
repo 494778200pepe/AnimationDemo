@@ -28,6 +28,8 @@
         <activity android:name=".Property.TimerActivity"/>
         <activity android:name=".VectorAnimationAct"/>
         <activity android:name=".Vector.VectorDemo1Act"/>
+        <activity android:name=".Vector.VectorDemo2Act"/>
+        <activity android:name=".Vector.VectorDemo3Act"/>
         <activity android:name=".ViewAnimationAct"/>
         <activity android:name=".View.TweenAnimationAct"/>
         <activity android:name=".View.tween.AlphaAnimationAct"/>

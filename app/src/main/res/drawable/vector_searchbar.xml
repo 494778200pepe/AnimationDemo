@@ -4,6 +4,6 @@
 
     <target
         android:name="search"
-        android:animation="@anim/anim_searchbar" />
+        android:animation="@animator/anim_searchbar" />
 
 </animated-vector>

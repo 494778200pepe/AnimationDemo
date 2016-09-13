@@ -3,5 +3,5 @@
     android:drawable="@drawable/vector">
     <target
         android:name="test"
-        android:animation="@anim/anim_path1" />
+        android:animation="@animator/anim_path1" />
 </animated-vector>
