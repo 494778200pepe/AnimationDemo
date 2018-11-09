@@ -12,7 +12,7 @@ import com.zitech.animationdemo.R;
 /**
  * Created by pepe on 2016/8/18 0018.
  */
-public class FrameAnimationAct extends AppCompatActivity {
+public class FrameAnimationAct extends AppCompatActivity implements View.OnClickListener {
 
     ImageView image;
     ImageView image2;
@@ -48,13 +48,26 @@ public class FrameAnimationAct extends AppCompatActivity {
             //根据资源名称和目录获取R.java中对应的资源ID
             int id = getResources().getIdentifier("flower" + i, "mipmap", getPackageName());
             //根据资源ID获取到Drawable对象
-            Drawable drawable = getResources().getDrawable(id);
+            Drawable drawable = getResources().getDrawable(id,null);
             //将此帧添加到AnimationDrawable中
             anim.addFrame(drawable, 500);
         }
         anim.setOneShot(false); //设置为loop
-        view.setBackgroundDrawable(anim);  //将动画设置为ImageView背景
+        view.setBackground(anim);  //将动画设置为ImageView背景
         anim.start();   //开始动画
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btn_stop:
+                AnimationDrawable anim = (AnimationDrawable) image2.getBackground();
+                if(anim.isRunning()){
+                    anim.stop();
+                }else{
+                    anim.start();
+                }
+                break;
+        }
+    }
 }
