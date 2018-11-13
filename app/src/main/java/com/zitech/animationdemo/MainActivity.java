@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_btn1://属性动画
                 startActivity(new Intent(this,PropertyAnimationAct.class));
                 break;
-            case R.id.main_btn2://矢量动画
+            case R.id.main_btn2://转场动画
+                startActivity(new Intent(this,TransitionAct.class));
+                break;
+            case R.id.main_btn3://矢量动画
                 startActivity(new Intent(this,VectorAnimationAct.class));
                 break;
             case R.id.main_demo1://补间动画的demo

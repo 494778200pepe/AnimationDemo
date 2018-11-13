@@ -14,5 +14,4 @@
         android:valueFrom="1"
         android:valueTo="0.5" >
     </objectAnimator>
-
 </set>

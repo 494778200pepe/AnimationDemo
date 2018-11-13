@@ -22,13 +22,6 @@
             android:onClick="viewAnim"
             android:text="View Anim" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="propertyValuesHolder"
-            android:text="PropertyValuesHolder " />
-
-
     </LinearLayout>
 
 </RelativeLayout>

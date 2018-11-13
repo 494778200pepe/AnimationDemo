@@ -11,32 +11,19 @@
     <Button
         android:id="@+id/main_btn0"
         style="@style/CommonButton"
-        android:text="View Animation" />
+        android:text="Explode transition" />
 
     <Button
         android:id="@+id/main_btn1"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Property Animation" />
+        android:text="Slide transition" />
 
     <Button
         android:id="@+id/main_btn2"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Transition" />
-
-    <Button
-        android:id="@+id/main_btn3"
-        style="@style/CommonButton"
-        android:layout_marginTop="10dp"
-        android:text="Vector animation" />
-
-    <Button
-        android:id="@+id/main_demo1"
-        style="@style/CommonButton"
-        android:layout_marginTop="10dp"
-        android:text="demo" />
-
+        android:text="Fade transition" />
 
 </LinearLayout>
 

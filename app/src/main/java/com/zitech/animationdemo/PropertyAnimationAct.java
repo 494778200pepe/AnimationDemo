@@ -64,7 +64,6 @@ public class PropertyAnimationAct extends AppCompatActivity implements View.OnCl
             case R.id.main_btn10://MojiDemo
                 startActivity(new Intent(this, MojiDemoAct.class));
                 break;
-
         }
     }
 }

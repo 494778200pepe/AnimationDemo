@@ -43,6 +43,13 @@
         <activity android:name=".View.tween.CustomAnimationAct"/>
         <activity android:name=".View.FrameAnimationAct"/>
         <activity android:name=".Demo1Act"/>
+        <activity android:name=".TransitionAct"/>
+        <activity android:name=".Transition.ActivityTransition1Act"/>
+        <activity android:name=".Transition.ActivityTransition2Act"/>
+        <activity android:name=".Transition.ShareElement1Act"/>
+        <activity android:name=".Transition.ViewTransformationAct"/>
+        <activity android:name=".Transition.ShareElement1Act"/>
+        <activity android:name=".Transition.ShareElement2Act"/>
     </application>
 
 </manifest>

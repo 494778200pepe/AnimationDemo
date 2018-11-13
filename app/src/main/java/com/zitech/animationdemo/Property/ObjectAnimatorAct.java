@@ -104,6 +104,17 @@ public class ObjectAnimatorAct extends AppCompatActivity {
                         .ofFloat(image, "zhy", 1.0F,  0.0F)//
                         .setDuration(500);//
                 anim12.start();
+                anim12.addPauseListener(new Animator.AnimatorPauseListener() {
+                    @Override
+                    public void onAnimationPause(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationResume(Animator animation) {
+
+                    }
+                });
                 anim12.addUpdateListener(new ValueAnimator.AnimatorUpdateListener()
                 {
                     @Override

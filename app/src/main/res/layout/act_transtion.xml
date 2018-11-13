@@ -7,36 +7,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
-
     <Button
         android:id="@+id/main_btn0"
         style="@style/CommonButton"
-        android:text="View Animation" />
+        android:text="Activity transition" />
 
     <Button
         android:id="@+id/main_btn1"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Property Animation" />
-
+        android:text="Share element" />
     <Button
         android:id="@+id/main_btn2"
         style="@style/CommonButton"
         android:layout_marginTop="10dp"
-        android:text="Transition" />
-
-    <Button
-        android:id="@+id/main_btn3"
-        style="@style/CommonButton"
-        android:layout_marginTop="10dp"
-        android:text="Vector animation" />
-
-    <Button
-        android:id="@+id/main_demo1"
-        style="@style/CommonButton"
-        android:layout_marginTop="10dp"
-        android:text="demo" />
-
+        android:text="View transformation"
+        android:transitionName="share" />
 
 </LinearLayout>
 
